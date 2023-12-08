@@ -1,0 +1,150 @@
+body {
+    font-family: Helvetica, sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #000;
+}
+
+h1 {
+    font-family: 'Helvetica Bold', sans-serif;
+}
+
+h2 {
+    font-family: 'Helvetica Bold', sans-serif;
+    font-size: medium;
+}
+
+.TextOverlay {
+    position: absolute;
+    left: 21%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #b5b5b5;
+    font-size: 128px;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    padding: 2.3rem 0 0.5rem;
+    background: transparent;
+    z-index: 1;
+}
+
+footer {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background-color: #000;
+    color: #b5b5b5;
+    padding: 0px;
+
+}
+
+.LogoContainer {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3; 
+}
+
+.BigRae {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    opacity: 1;
+    transition: opacity 0.5s, width 0.5s, height 0.5s;
+    filter: blur(10px); /* Voeg deze regel toe om het Rae-logo zelf te vervagen */
+    z-index: 1;
+}
+
+.Frame25 {
+    width: 1920px;
+    height: 100%vh;
+    position: absolute;
+}
+
+.Zwartvlak {
+    width: 100vw;
+    height: 100vh; /* 33.33% van de viewport hoogte */
+    margin-bottom: 0px;
+  }
+  
+  #box1 {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  #box2 {
+    background-color: rgb(65, 65, 65);
+  }
+  
+  #box3 {
+    background-color: rgb(0, 0, 0);
+  }
+
+
+
+
+
+.hackwrd {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.text{
+    text-align: center;
+  font-weight: 100;
+  font-size: 128px;
+  color: #FAFAFA;
+}
+.dud {
+  color: 757575;
+}
+
+
+
+.sliding-text-container {
+  width: 100%;
+  text-transform: uppercase;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  /*      overflow      */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.big-text {
+  display: inline-block;
+  font-size: 200px;
+  color: #dfeedf;
+  z-index: 0;
+  font-weight: 900;
+  animation: marquee 20s linear infinite;
+}
+@keyframes marquee {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-60.5%);
+  }
+}
